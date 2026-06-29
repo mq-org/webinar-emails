@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>ウェビナー終了後メール一覧</title>
+<title>オートウェビナー配信メール一覧</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', sans-serif; }
@@ -17,8 +17,8 @@
 <div class="max-w-5xl mx-auto px-4 py-6">
   <header class="mb-6 flex flex-wrap items-end justify-between gap-3">
     <div>
-      <h1 class="text-2xl font-bold">ウェビナー終了後メール一覧</h1>
-      <p class="text-sm text-gray-500 mt-1">on-line-school.jp の各ウェビナー「開催日時後」フォローアップメールを表示します</p>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">オートウェビナー配信メール一覧</h1>
+      <p class="text-sm text-gray-500 mt-2">on-line-school.jp の各ウェビナー「開催日時後」フォローアップメールを表示します</p>
     </div>
     <div class="text-right text-xs text-gray-500">
       <div>最終更新: <span id="updated_at">...</span></div>
@@ -27,7 +27,7 @@
   </header>
 
   <div class="mb-4 flex gap-2 flex-wrap items-center">
-    <input id="search" type="search" placeholder="ウェビナー名で検索..." class="flex-1 min-w-[200px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400">
+    <input id="search" type="search" placeholder="検索..." class="flex-1 min-w-[200px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400">
   </div>
 
   <div id="list" class="space-y-4"></div>
@@ -53,7 +53,7 @@ function render(filter=''){
   if(!DATA) return;
   const list = document.getElementById('list');
   const q = filter.trim().toLowerCase();
-  const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
+  const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.product||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
   list.innerHTML = scenarios.map(s => `
     <details class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group/scenario">
       <summary class="px-4 py-3 bg-gradient-to-r from-emerald-50 to-white border-b border-gray-100 flex items-center gap-3 hover:bg-emerald-100/40">

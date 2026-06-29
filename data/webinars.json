@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-29T14:52:20.107601+09:00",
+  "generated_at": "2026-06-29T15:03:29.411901+09:00",
   "timing_label": "ウェビナー開催日時後",
   "scenarios": [
     {
       "id": "172087",
       "title": "【フェロー】オンラインビジネスマスター講座（テンプレ） – (Copy)",
-      "product": "フェロー",
+      "product": "オンラインビジネスマスター講座",
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172087&action=edit&timing=after",
       "email_count": 12,
@@ -147,7 +147,7 @@
     {
       "id": "172000",
       "title": "【フェロー】オンラインビジネスマスター講座（テンプレ）",
-      "product": "フェロー",
+      "product": "オンラインビジネスマスター講座",
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172000&action=edit&timing=after",
       "email_count": 12,
