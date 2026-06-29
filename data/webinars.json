@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T15:03:29.411901+09:00",
+  "generated_at": "2026-06-29T15:12:39.878615+09:00",
   "timing_label": "ウェビナー開催日時後",
   "scenarios": [
     {
@@ -9,6 +9,17 @@
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172087&action=edit&timing=after",
       "email_count": 12,
+      "benefits_total": 3,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/dp-ltb",
+          "items": [
+            "ビジネスモデルシート（プレミアムコンサルティング限定だったシート）",
+            "魔法のツール紹介（リサーチ済みの効果が出るツール案内）",
+            "インタビュー対談（サスティナブルビジネス実践者への取材内容）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -151,6 +162,17 @@
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172000&action=edit&timing=after",
       "email_count": 12,
+      "benefits_total": 3,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/dp-ltb",
+          "items": [
+            "ビジネスモデルシート（プレミアムコンサルティング限定だったシート）",
+            "魔法のツール紹介（リサーチ済みの効果が出るツール案内）",
+            "インタビュー対談（サスティナブルビジネス実践者への取材内容）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -293,6 +315,18 @@
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171481&action=edit&timing=after",
       "email_count": 4,
+      "benefits_total": 4,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/aibasic",
+          "items": [
+            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
+            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
+            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
+            "AI活用コンサルティング（個別相談可）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -354,6 +388,18 @@
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171318&action=edit&timing=after",
       "email_count": 4,
+      "benefits_total": 4,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/aibasic",
+          "items": [
+            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
+            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
+            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
+            "AI活用コンサルティング（個別相談可）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -415,6 +461,8 @@
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=167218&action=edit&timing=after",
       "email_count": 4,
+      "benefits_total": 0,
+      "scenario_benefits": [],
       "emails": [
         {
           "order": 1,
