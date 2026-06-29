@@ -55,17 +55,21 @@ function render(filter=''){
   const q = filter.trim().toLowerCase();
   const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
   list.innerHTML = scenarios.map(s => `
-    <article class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-      <header class="px-4 py-3 bg-gradient-to-r from-emerald-50 to-white border-b border-gray-100">
-        <div class="flex flex-wrap items-center gap-2 justify-between">
-          <h2 class="text-lg font-semibold">${esc(s.title)}</h2>
-          <div class="text-xs text-gray-500 flex gap-3">
+    <details class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group/scenario">
+      <summary class="px-4 py-3 bg-gradient-to-r from-emerald-50 to-white border-b border-gray-100 flex items-center gap-3 hover:bg-emerald-100/40">
+        <span class="text-gray-400 group-open/scenario:rotate-90 transition-transform select-none">▶</span>
+        <div class="flex-1 flex flex-wrap items-center gap-x-3 gap-y-1 justify-between">
+          <div class="flex flex-wrap items-center gap-2">
+            <h2 class="text-lg font-semibold">${esc(s.title)}</h2>
+            ${s.product ? `<span class="px-2 py-0.5 rounded-full text-xs bg-emerald-100 text-emerald-700 font-medium">${esc(s.product)}</span>` : ''}
+          </div>
+          <div class="text-xs text-gray-500 flex gap-3 items-center">
             <span>作成者: ${esc(s.author||'-')}</span>
             <span>メール数: ${s.email_count}通</span>
-            <a href="${esc(s.wp_edit_url)}" target="_blank" class="text-emerald-600 underline">WordPressで編集</a>
+            <a href="${esc(s.wp_edit_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="text-emerald-600 underline">WordPressで編集</a>
           </div>
         </div>
-      </header>
+      </summary>
       <div class="divide-y divide-gray-100">
         ${s.emails.map(e => `
           <details class="group">
@@ -104,7 +108,7 @@ function render(filter=''){
           </details>
         `).join('')}
       </div>
-    </article>
+    </details>
   `).join('') || '<p class="text-center text-gray-400 py-12">該当なし</p>';
 }
 

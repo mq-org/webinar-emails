@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-06-29T14:46:30.730127+09:00",
+  "generated_at": "2026-06-29T14:52:20.107601+09:00",
   "timing_label": "ウェビナー開催日時後",
   "scenarios": [
     {
       "id": "172087",
       "title": "【フェロー】オンラインビジネスマスター講座（テンプレ） – (Copy)",
+      "product": "フェロー",
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172087&action=edit&timing=after",
       "email_count": 12,
@@ -146,6 +147,7 @@
     {
       "id": "172000",
       "title": "【フェロー】オンラインビジネスマスター講座（テンプレ）",
+      "product": "フェロー",
       "author": "Iino",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=172000&action=edit&timing=after",
       "email_count": 12,
@@ -287,6 +289,7 @@
     {
       "id": "171481",
       "title": "[ナチュラルセールス]「自然に売れる秘訣」教えます",
+      "product": "ナチュラルセールス",
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171481&action=edit&timing=after",
       "email_count": 4,
@@ -347,6 +350,7 @@
     {
       "id": "171318",
       "title": "[オリつく]あなたのオリジナル講座つくります",
+      "product": "オリつく",
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171318&action=edit&timing=after",
       "email_count": 4,
@@ -407,6 +411,7 @@
     {
       "id": "167218",
       "title": "LINEミニプロモ3月",
+      "product": "聞くチカラマスター講座",
       "author": "みやじゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=167218&action=edit&timing=after",
       "email_count": 4,
