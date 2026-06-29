@@ -7,32 +7,33 @@
 <title>オートウェビナー配信メール一覧</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', sans-serif; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', sans-serif; background: #FAF6EE; }
   pre { font-family: inherit; white-space: pre-wrap; word-break: break-word; }
   details summary { cursor: pointer; list-style: none; }
   details summary::-webkit-details-marker { display: none; }
 </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-<div class="max-w-5xl mx-auto px-4 py-6">
-  <header class="mb-6 flex flex-wrap items-end justify-between gap-3">
-    <div>
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">オートウェビナー配信メール一覧</h1>
-      <p class="text-sm text-gray-500 mt-2">on-line-school.jp の各ウェビナー「開催日時後」フォローアップメールを表示します</p>
+<body class="text-stone-800">
+<div class="max-w-5xl mx-auto px-4 py-10">
+  <header class="mb-10 text-center">
+    <div class="inline-block px-10 py-7 rounded-2xl border-2 border-stone-300/70 bg-gradient-to-b from-amber-50 to-stone-50 shadow-sm">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-800">オートウェビナー配信メール一覧</h1>
+      <p class="text-sm text-stone-500 mt-3">on-line-school.jp の各ウェビナー「開催日時後」フォローアップメールを表示します</p>
     </div>
-    <div class="text-right text-xs text-gray-500">
-      <div>最終更新: <span id="updated_at">...</span></div>
-      <div class="mt-1">対象: <span id="count">...</span>本</div>
+    <div class="mt-5 text-xs text-stone-500 flex gap-3 justify-center items-center">
+      <span>最終更新: <span id="updated_at" class="font-medium text-stone-700">...</span></span>
+      <span class="text-stone-300">•</span>
+      <span>対象: <span id="count" class="font-medium text-stone-700">...</span>本</span>
     </div>
   </header>
 
-  <div class="mb-4 flex gap-2 flex-wrap items-center">
-    <input id="search" type="search" placeholder="検索..." class="flex-1 min-w-[200px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400">
+  <div class="mb-5 flex gap-2 flex-wrap items-center">
+    <input id="search" type="search" placeholder="検索..." class="flex-1 min-w-[200px] px-4 py-2.5 bg-white border border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-300 focus:border-amber-400 placeholder-stone-400">
   </div>
 
   <div id="list" class="space-y-4"></div>
 
-  <footer class="mt-12 text-xs text-gray-400 text-center">
+  <footer class="mt-16 text-xs text-stone-400 text-center">
     <p>WordPress側で変更があった場合は週次自動更新で反映されます。緊急時はSuiにご相談ください。</p>
   </footer>
 </div>
@@ -45,7 +46,7 @@ function fmt(iso){
 }
 function esc(s){return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);}
 function urlify(text){
-  return esc(text).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener" class="text-emerald-600 underline break-all">$1</a>');
+  return esc(text).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener" class="text-amber-700 hover:text-amber-900 underline break-all">$1</a>');
 }
 
 let DATA = null;
@@ -55,53 +56,53 @@ function render(filter=''){
   const q = filter.trim().toLowerCase();
   const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.product||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
   list.innerHTML = scenarios.map(s => `
-    <details class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group/scenario">
-      <summary class="px-4 py-3 bg-gradient-to-r from-emerald-50 to-white border-b border-gray-100 flex items-center gap-3 hover:bg-emerald-100/40">
-        <span class="text-gray-400 group-open/scenario:rotate-90 transition-transform select-none">▶</span>
+    <details class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden group/scenario">
+      <summary class="px-5 py-4 bg-gradient-to-r from-amber-50/80 to-white border-b border-stone-100 flex items-center gap-3 hover:bg-amber-100/30 transition-colors">
+        <span class="text-stone-400 group-open/scenario:rotate-90 transition-transform select-none">▶</span>
         <div class="flex-1 flex flex-wrap items-center gap-x-3 gap-y-1 justify-between">
           <div class="flex flex-wrap items-center gap-2">
-            <h2 class="text-lg font-semibold">${esc(s.title)}</h2>
-            ${s.product ? `<span class="px-2 py-0.5 rounded-full text-xs bg-emerald-100 text-emerald-700 font-medium">${esc(s.product)}</span>` : ''}
+            <h2 class="text-lg font-semibold text-stone-800">${esc(s.title)}</h2>
+            ${s.product ? `<span class="px-2.5 py-0.5 rounded-full text-xs bg-amber-100 text-amber-900 font-medium border border-amber-200">${esc(s.product)}</span>` : ''}
           </div>
-          <div class="text-xs text-gray-500 flex gap-3 items-center">
+          <div class="text-xs text-stone-500 flex gap-3 items-center">
             <span>作成者: ${esc(s.author||'-')}</span>
             <span>メール数: ${s.email_count}通</span>
-            <a href="${esc(s.wp_edit_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="text-emerald-600 underline">WordPressで編集</a>
+            <a href="${esc(s.wp_edit_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="text-amber-700 hover:text-amber-900 underline">WordPressで編集</a>
           </div>
         </div>
       </summary>
-      <div class="divide-y divide-gray-100">
+      <div class="divide-y divide-stone-100">
         ${s.emails.map(e => `
           <details class="group">
-            <summary class="px-4 py-3 flex items-center gap-3 hover:bg-gray-50">
-              <span class="text-xs font-mono text-gray-400 w-12">${e.order}通目</span>
+            <summary class="px-5 py-3 flex items-center gap-3 hover:bg-stone-50 transition-colors">
+              <span class="text-xs font-mono text-stone-400 w-12">${e.order}通目</span>
               <span class="flex-1">
-                <div class="font-medium">${esc(e.id_title || e.subject)}</div>
-                <div class="text-xs text-gray-500 mt-0.5">${esc(e.schedule)}</div>
+                <div class="font-medium text-stone-800">${esc(e.id_title || e.subject)}</div>
+                <div class="text-xs text-stone-500 mt-0.5">${esc(e.schedule)}</div>
               </span>
-              <span class="text-gray-400 group-open:rotate-90 transition-transform">›</span>
+              <span class="text-stone-400 group-open:rotate-90 transition-transform">›</span>
             </summary>
-            <div class="px-4 pb-4 pt-1 space-y-3 bg-gray-50/50">
+            <div class="px-5 pb-5 pt-1 space-y-3 bg-stone-50/60">
               <div>
-                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">件名</div>
+                <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide mb-1">件名</div>
                 <div class="text-sm">${esc(e.subject)}</div>
               </div>
               <div>
-                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">本文</div>
-                <pre class="text-sm bg-white p-3 rounded border border-gray-200">${urlify(e.body)}</pre>
+                <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide mb-1">本文</div>
+                <pre class="text-sm bg-white p-4 rounded-lg border border-stone-200 leading-relaxed">${urlify(e.body)}</pre>
               </div>
               ${e.benefits && e.benefits.length ? `
               <div>
-                <div class="text-xs font-semibold text-emerald-700 uppercase tracking-wide mb-1">本文内LPの特典</div>
-                <ul class="text-sm bg-emerald-50/60 p-3 rounded border border-emerald-200 list-disc pl-6 space-y-1">
+                <div class="text-xs font-semibold text-amber-800 uppercase tracking-wide mb-1">本文内LPの特典</div>
+                <ul class="text-sm bg-amber-50/70 p-4 rounded-lg border border-amber-200 list-disc pl-6 space-y-1">
                   ${e.benefits.map(b => `<li>${esc(b)}</li>`).join('')}
                 </ul>
               </div>` : ''}
               ${e.urls && e.urls.length ? `
               <div>
-                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">本文内のURL</div>
+                <div class="text-xs font-semibold text-stone-500 uppercase tracking-wide mb-1">本文内のURL</div>
                 <ul class="text-sm space-y-1">
-                  ${e.urls.map(u => `<li><a href="${esc(u)}" target="_blank" class="text-emerald-600 underline break-all">${esc(u)}</a></li>`).join('')}
+                  ${e.urls.map(u => `<li><a href="${esc(u)}" target="_blank" class="text-amber-700 hover:text-amber-900 underline break-all">${esc(u)}</a></li>`).join('')}
                 </ul>
               </div>` : ''}
             </div>
@@ -109,7 +110,7 @@ function render(filter=''){
         `).join('')}
       </div>
     </details>
-  `).join('') || '<p class="text-center text-gray-400 py-12">該当なし</p>';
+  `).join('') || '<p class="text-center text-stone-400 py-12">該当なし</p>';
 }
 
 fetch('data/webinars.json').then(r => r.json()).then(d => {
