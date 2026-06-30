@@ -54,16 +54,17 @@ function render(filter=''){
   if(!DATA) return;
   const list = document.getElementById('list');
   const q = filter.trim().toLowerCase();
-  const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.product||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
+  const scenarios = DATA.scenarios.filter(s => !q || (s.title||'').toLowerCase().includes(q) || (s.webinar_title||'').toLowerCase().includes(q) || (s.product||'').toLowerCase().includes(q) || (s.author||'').toLowerCase().includes(q));
   list.innerHTML = scenarios.map(s => `
     <details class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden group/scenario">
-      <summary class="px-5 py-4 bg-gradient-to-r from-amber-50/80 to-white border-b border-stone-100 flex items-center gap-3 hover:bg-amber-100/30 transition-colors">
-        <span class="text-stone-400 group-open/scenario:rotate-90 transition-transform select-none">▶</span>
-        <div class="flex-1 flex flex-wrap items-center gap-x-3 gap-y-1 justify-between">
-          <div class="flex flex-wrap items-center gap-2">
-            <h2 class="text-lg font-semibold text-stone-800">${esc(s.title)}</h2>
+      <summary class="px-5 py-4 bg-gradient-to-r from-amber-50/80 to-white border-b border-stone-100 flex items-start gap-3 hover:bg-amber-100/30 transition-colors">
+        <span class="text-stone-400 group-open/scenario:rotate-90 transition-transform select-none mt-1">▶</span>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-2">
+            <h2 class="text-lg font-semibold text-stone-800">${esc(s.webinar_title || s.title)}</h2>
             ${s.product ? `<span class="px-2.5 py-0.5 rounded-full text-xs bg-amber-100 text-amber-900 font-medium border border-amber-200">${esc(s.product)}</span>` : ''}
           </div>
+          ${s.webinar_title && s.title && s.webinar_title !== s.title ? `<div class="text-xs text-stone-500 mb-2"><span class="font-medium text-stone-600">内部名:</span> ${esc(s.title)}</div>` : ''}
           <div class="text-xs text-stone-500 flex gap-3 items-center flex-wrap">
             <span>作成者: ${esc(s.author||'-')}</span>
             <span>メール数: ${s.email_count}通</span>
