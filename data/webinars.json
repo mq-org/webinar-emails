@@ -3,14 +3,24 @@
   "timing_label": "ウェビナー開催日時後",
   "scenarios": [
     {
-      "id": "167218",
-      "title": "LINEミニプロモ3月",
-      "product": "聞くチカラマスター講座",
+      "id": "171481",
+      "title": "[ナチュラルセールス]「自然に売れる秘訣」教えます",
+      "product": "ナチュラルセールス",
       "author": "みやじゆみ",
-      "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=167218&action=edit&timing=after",
+      "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171481&action=edit&timing=after",
       "email_count": 4,
-      "benefits_total": 0,
-      "scenario_benefits": [],
+      "benefits_total": 4,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/aibasic",
+          "items": [
+            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
+            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
+            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
+            "AI活用コンサルティング（個別相談可）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -26,11 +36,17 @@
           "schedule": "ウェビナー開催日時の0時間30分後に実行",
           "id_title": "販売リンクの送信",
           "subject": "【{{webinar_title}}】ご視聴ありがとうございました！",
-          "body": "マツダミヒロです。\n\n\n本日はお忙しいなか\n\n{{webinar_title}}\n\nにご参加いただきありがとうございました。\n\n\nなお、今回の配信の中で\n\n【「聞くチカラ」マスター講座30日レッスン】\nのご案内をしています。\n\n \n\nこちらも期間限定でのご案内になるので\n\nぜひおはやめにご覧くださいね\n\n　↓　↓　↓\n\nhttps://hs.shitsumon.jp/linemini-kikuchikara\n\n\n質問も、会話も、人間関係も、\n自然とうまくいくようになる。\n\nそんな人生にしていきましょう。\n\nマツダミヒロ",
+          "body": "マツダミヒロです。\n\n\n本日はお忙しいなか\n\n{{webinar_title}}\n\nにご参加いただきありがとうございました。\n\n\nなお、今回の配信の中で\n\n【AI入門講座】のご案内をしています。\n\n \n\nこちらも期間限定でのご案内になるので\n\nぜひお早めにご覧くださいね\n\n　↓　↓　↓\n\nhttps://hs.shitsumon.jp/aibasic\n\n\n\nまた、講座にご参加いただいたお礼に\n【本日のスライド】をプレゼントします！\n\n🔽AI講座のスライドを見る\nhttps://www.canva.com/design/DAHC5nPQVE0/kY6pFDWNr91o67pvlbyJQA/view?utm_content=DAHC5nPQVE0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3af0de6970\n\nぜひ、改めてゆっくり\nAIの学びを振り返ってみてくださいね。\n\nマツダミヒロ",
           "urls": [
-            "https://hs.shitsumon.jp/linemini-kikuchikara"
+            "https://hs.shitsumon.jp/aibasic",
+            "https://www.canva.com/design/DAHC5nPQVE0/kY6pFDWNr91o67pvlbyJQA/view?utm_content=DAHC5nPQVE0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3af0de6970"
           ],
-          "benefits": []
+          "benefits": [
+            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
+            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
+            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
+            "AI活用コンサルティング（個別相談可）"
+          ]
         },
         {
           "order": 3,
@@ -45,15 +61,20 @@
           "order": 4,
           "schedule": "ウェビナー開催日の2日後の19時0分に実行",
           "id_title": "最後のご案内",
-          "subject": "【「聞くチカラ」マスター講座30日レッスン】お急ぎください！最後のご案内です。",
-          "body": "マツダミヒロです。\n\nこちらはもう確認いただけましたか？\n\n⇒ https://hs.shitsumon.jp/linemini-kikuchikara\n\n \n\n\nたびたびご案内させていただいた\nこのサービス。\n\nついに【本日】で\n今回の募集は終わりとなります。\n\n\n無理なく自然に\n【聞ける人】になって\nさらに愛される人になってほしい。\n\nそして、\n人生をより豊かにしていってほしい。\n\nそんな願いが強くあります。\n \n\n\n●【「聞くチカラ」マスター講座30日レッスン】\n\n受付は\n【本日23:59】で完全締切とさせていただきます。\n\n⇒ https://hs.shitsumon.jp/linemini-kikuchikara\n\n \n \n新しい生き方の第一歩。\nあなたと講座でお会いできることを心から楽しみにしています。\n\nマツダミヒロ",
+          "subject": "【『時間と場所にとらわれない生き方』30日間レッスン】お急ぎください！最後のご案内です。",
+          "body": "マツダミヒロです。\n\nこちらはもう確認いただけましたか？\n\n⇒ https://hs.shitsumon.jp/aibasic\n\n \n\n\nたびたびご案内させていただいた\nこのサービス。\n\nついに【本日】で\n今回の募集は終わりとなります。\n\n\nこのAIの大きな波に\n無理なく自然に乗って\nあなたにもAIを味方にしてほしい。\n\nそして、人生をより豊かにしていってほしい。\n\nそんな願いが強くあります。\n \n\n\n●【AI入門講座】の受付は\n【本日23:59】で完全締切とさせていただきます。\n\n⇒ https://hs.shitsumon.jp/aibasic\n\n \n \n新しい生き方の第一歩、あなたと講座でお会いできることを心から楽しみにしています。\n\nマツダミヒロ",
           "urls": [
-            "https://hs.shitsumon.jp/linemini-kikuchikara"
+            "https://hs.shitsumon.jp/aibasic"
           ],
-          "benefits": []
+          "benefits": [
+            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
+            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
+            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
+            "AI活用コンサルティング（個別相談可）"
+          ]
         }
       ],
-      "webinar_title": "LINEミニプロモ3月"
+      "webinar_title": "「自然に売れる秘訣」教えます"
     },
     {
       "id": "171318",
@@ -127,81 +148,7 @@
           ]
         }
       ],
-      "webinar_title": "[オリつく]あなたのオリジナル講座つくります"
-    },
-    {
-      "id": "171481",
-      "title": "[ナチュラルセールス]「自然に売れる秘訣」教えます",
-      "product": "ナチュラルセールス",
-      "author": "みやじゆみ",
-      "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=171481&action=edit&timing=after",
-      "email_count": 4,
-      "benefits_total": 4,
-      "scenario_benefits": [
-        {
-          "lp_url": "https://hs.shitsumon.jp/aibasic",
-          "items": [
-            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
-            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
-            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
-            "AI活用コンサルティング（個別相談可）"
-          ]
-        }
-      ],
-      "emails": [
-        {
-          "order": 1,
-          "schedule": "ウェビナー開催日時の0時間0分後に実行",
-          "id_title": "開始時刻のメール通知",
-          "subject": "【{{webinar_label_name}}】はじまりました！今すぐご覧ください。",
-          "body": "マツダミヒロです。\n\nお待たせいたしました。\n{{webinar_label_name}}がスタートしました！\n\n今すぐ、こちらをクリックしてご視聴ください。\n\n────────────────────────────\n■ {{webinar_title}}\n────────────────────────────\n\n{{webinar_url}}\n\n────────────────────────────\n\nご参加お待ちしています！",
-          "urls": [],
-          "benefits": []
-        },
-        {
-          "order": 2,
-          "schedule": "ウェビナー開催日時の0時間30分後に実行",
-          "id_title": "販売リンクの送信",
-          "subject": "【{{webinar_title}}】ご視聴ありがとうございました！",
-          "body": "マツダミヒロです。\n\n\n本日はお忙しいなか\n\n{{webinar_title}}\n\nにご参加いただきありがとうございました。\n\n\nなお、今回の配信の中で\n\n【AI入門講座】のご案内をしています。\n\n \n\nこちらも期間限定でのご案内になるので\n\nぜひお早めにご覧くださいね\n\n　↓　↓　↓\n\nhttps://hs.shitsumon.jp/aibasic\n\n\n\nまた、講座にご参加いただいたお礼に\n【本日のスライド】をプレゼントします！\n\n🔽AI講座のスライドを見る\nhttps://www.canva.com/design/DAHC5nPQVE0/kY6pFDWNr91o67pvlbyJQA/view?utm_content=DAHC5nPQVE0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3af0de6970\n\nぜひ、改めてゆっくり\nAIの学びを振り返ってみてくださいね。\n\nマツダミヒロ",
-          "urls": [
-            "https://hs.shitsumon.jp/aibasic",
-            "https://www.canva.com/design/DAHC5nPQVE0/kY6pFDWNr91o67pvlbyJQA/view?utm_content=DAHC5nPQVE0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3af0de6970"
-          ],
-          "benefits": [
-            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
-            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
-            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
-            "AI活用コンサルティング（個別相談可）"
-          ]
-        },
-        {
-          "order": 3,
-          "schedule": "ウェビナー開催日の1日後の8時0分に実行",
-          "id_title": "リプレイ",
-          "subject": "【2日間限定】リプレイ(再放送)を公開します！",
-          "body": "マツダミヒロです。\n\n昨日は大変多くの方に\n{{webinar_title}}にご参加いただき\n本当にありがとうございました！\n\n\nもしかしたら、\n\n「仕事の都合で視聴できなかった」\n「家族と予定があって視聴できなかった」\n\nという方もいると思います。\n\n\nそこで、2日間だけの期間限定で、\nリプレイ（再放送）を公開させていただくことにしました！\n\n\nまだ{{webinar_label_name}}を\nご覧になっていない方は、\n今すぐ、こちらをクリックしてご視聴くださいね。\n\n────────────────────────────\n■ {{webinar_title}}（再放送）\n────────────────────────────\n\n{{webinar_url}}\n\n────────────────────────────",
-          "urls": [],
-          "benefits": []
-        },
-        {
-          "order": 4,
-          "schedule": "ウェビナー開催日の2日後の19時0分に実行",
-          "id_title": "最後のご案内",
-          "subject": "【『時間と場所にとらわれない生き方』30日間レッスン】お急ぎください！最後のご案内です。",
-          "body": "マツダミヒロです。\n\nこちらはもう確認いただけましたか？\n\n⇒ https://hs.shitsumon.jp/aibasic\n\n \n\n\nたびたびご案内させていただいた\nこのサービス。\n\nついに【本日】で\n今回の募集は終わりとなります。\n\n\nこのAIの大きな波に\n無理なく自然に乗って\nあなたにもAIを味方にしてほしい。\n\nそして、人生をより豊かにしていってほしい。\n\nそんな願いが強くあります。\n \n\n\n●【AI入門講座】の受付は\n【本日23:59】で完全締切とさせていただきます。\n\n⇒ https://hs.shitsumon.jp/aibasic\n\n \n \n新しい生き方の第一歩、あなたと講座でお会いできることを心から楽しみにしています。\n\nマツダミヒロ",
-          "urls": [
-            "https://hs.shitsumon.jp/aibasic"
-          ],
-          "benefits": [
-            "The Slowオンラインサロン1ヶ月無料招待（通常8,800円相当）",
-            "著書『AI時代に強い質問力』プレゼント（マツダミヒロ著、定価1,980円）",
-            "オリジナルAI使用権（カスタムAIツール群、Slow会員期間中継続利用可）",
-            "AI活用コンサルティング（個別相談可）"
-          ]
-        }
-      ],
-      "webinar_title": "[ナチュラルセールス]「自然に売れる秘訣」教えます"
+      "webinar_title": "あなたのオリジナル講座つくります"
     },
     {
       "id": "172000",
@@ -355,7 +302,7 @@
           "benefits": []
         }
       ],
-      "webinar_title": "【フェロー】オンラインビジネスマスター講座（テンプレ）"
+      "webinar_title": "オンラインビジネスマスター講座"
     },
     {
       "id": "172087",
@@ -509,12 +456,12 @@
           "benefits": []
         }
       ],
-      "webinar_title": "【フェロー】オンラインビジネスマスター講座（テンプレ） – (Copy)"
+      "webinar_title": "オンラインビジネスマスター講座"
     },
     {
       "id": "158432",
       "title": "時間と場所にとらわれないでビジネスを創る3つの秘密(LINEメニュー) -フォローアップ",
-      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密(LINEメニュー)",
+      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密",
       "product": "時間と場所にとらわれない生き方30日間レッスン",
       "author": "上田修司",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=158432&action=edit&timing=after",
@@ -646,7 +593,7 @@
     {
       "id": "159004",
       "title": "時間と場所にとらわれないでビジネスを創る3つの秘密(日常プロモ)- フォローアップ",
-      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密(日常プロモ)",
+      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密",
       "product": "時間と場所にとらわれない生き方30日間レッスン",
       "author": "上田修司",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=159004&action=edit&timing=after",
@@ -778,7 +725,7 @@
     {
       "id": "160972",
       "title": "時間と場所にとらわれないでビジネスを創る3つの秘密(汎用)- フォローアップ",
-      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密(汎用)",
+      "webinar_title": "時間と場所にとらわれないでビジネスを創る3つの秘密",
       "product": "時間と場所にとらわれない生き方30日間レッスン",
       "author": "上田修司",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=160972&action=edit&timing=after",
@@ -906,6 +853,59 @@
           "benefits": []
         }
       ]
+    },
+    {
+      "id": "167218",
+      "title": "LINEミニプロモ3月",
+      "product": "聞くチカラマスター講座",
+      "author": "みやじゆみ",
+      "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=167218&action=edit&timing=after",
+      "email_count": 4,
+      "benefits_total": 0,
+      "scenario_benefits": [],
+      "emails": [
+        {
+          "order": 1,
+          "schedule": "ウェビナー開催日時の0時間0分後に実行",
+          "id_title": "開始時刻のメール通知",
+          "subject": "【{{webinar_label_name}}】はじまりました！今すぐご覧ください。",
+          "body": "マツダミヒロです。\n\nお待たせいたしました。\n{{webinar_label_name}}がスタートしました！\n\n今すぐ、こちらをクリックしてご視聴ください。\n\n────────────────────────────\n■ {{webinar_title}}\n────────────────────────────\n\n{{webinar_url}}\n\n────────────────────────────\n\nご参加お待ちしています！",
+          "urls": [],
+          "benefits": []
+        },
+        {
+          "order": 2,
+          "schedule": "ウェビナー開催日時の0時間30分後に実行",
+          "id_title": "販売リンクの送信",
+          "subject": "【{{webinar_title}}】ご視聴ありがとうございました！",
+          "body": "マツダミヒロです。\n\n\n本日はお忙しいなか\n\n{{webinar_title}}\n\nにご参加いただきありがとうございました。\n\n\nなお、今回の配信の中で\n\n【「聞くチカラ」マスター講座30日レッスン】\nのご案内をしています。\n\n \n\nこちらも期間限定でのご案内になるので\n\nぜひおはやめにご覧くださいね\n\n　↓　↓　↓\n\nhttps://hs.shitsumon.jp/linemini-kikuchikara\n\n\n質問も、会話も、人間関係も、\n自然とうまくいくようになる。\n\nそんな人生にしていきましょう。\n\nマツダミヒロ",
+          "urls": [
+            "https://hs.shitsumon.jp/linemini-kikuchikara"
+          ],
+          "benefits": []
+        },
+        {
+          "order": 3,
+          "schedule": "ウェビナー開催日の1日後の8時0分に実行",
+          "id_title": "リプレイ",
+          "subject": "【2日間限定】リプレイ(再放送)を公開します！",
+          "body": "マツダミヒロです。\n\n昨日は大変多くの方に\n{{webinar_title}}にご参加いただき\n本当にありがとうございました！\n\n\nもしかしたら、\n\n「仕事の都合で視聴できなかった」\n「家族と予定があって視聴できなかった」\n\nという方もいると思います。\n\n\nそこで、2日間だけの期間限定で、\nリプレイ（再放送）を公開させていただくことにしました！\n\n\nまだ{{webinar_label_name}}を\nご覧になっていない方は、\n今すぐ、こちらをクリックしてご視聴くださいね。\n\n────────────────────────────\n■ {{webinar_title}}（再放送）\n────────────────────────────\n\n{{webinar_url}}\n\n────────────────────────────",
+          "urls": [],
+          "benefits": []
+        },
+        {
+          "order": 4,
+          "schedule": "ウェビナー開催日の2日後の19時0分に実行",
+          "id_title": "最後のご案内",
+          "subject": "【「聞くチカラ」マスター講座30日レッスン】お急ぎください！最後のご案内です。",
+          "body": "マツダミヒロです。\n\nこちらはもう確認いただけましたか？\n\n⇒ https://hs.shitsumon.jp/linemini-kikuchikara\n\n \n\n\nたびたびご案内させていただいた\nこのサービス。\n\nついに【本日】で\n今回の募集は終わりとなります。\n\n\n無理なく自然に\n【聞ける人】になって\nさらに愛される人になってほしい。\n\nそして、\n人生をより豊かにしていってほしい。\n\nそんな願いが強くあります。\n \n\n\n●【「聞くチカラ」マスター講座30日レッスン】\n\n受付は\n【本日23:59】で完全締切とさせていただきます。\n\n⇒ https://hs.shitsumon.jp/linemini-kikuchikara\n\n \n \n新しい生き方の第一歩。\nあなたと講座でお会いできることを心から楽しみにしています。\n\nマツダミヒロ",
+          "urls": [
+            "https://hs.shitsumon.jp/linemini-kikuchikara"
+          ],
+          "benefits": []
+        }
+      ],
+      "webinar_title": "話してないのに人から好かれる方法"
     }
   ]
 }
