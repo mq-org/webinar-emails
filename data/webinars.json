@@ -1,17 +1,27 @@
 {
-  "generated_at": "2026-06-30T22:11:30.625780+09:00",
+  "generated_at": "2026-06-30T22:16:02.958827+09:00",
   "timing_label": "ウェビナー開催日時後",
   "scenarios": [
     {
       "id": "148162",
       "title": "もう1つの居場所をつくる",
       "webinar_title": "『もう1つの居場所をつくる』出版講演",
-      "product": "",
+      "product": "『時間と場所にとらわれない生き方』30日間レッスン",
       "author": "みやじ ゆみ",
       "wp_edit_url": "https://on-line-school.jp/wp-admin/post.php?post=148162&action=edit&timing=after",
       "email_count": 6,
-      "benefits_total": 0,
-      "scenario_benefits": [],
+      "benefits_total": 4,
+      "scenario_benefits": [
+        {
+          "lp_url": "https://hs.shitsumon.jp/locationfreeonlinesc",
+          "items": [
+            "【先着100名】『もう1つの居場所をつくる』書籍 2冊プレゼント",
+            "【先着100名】マツダミヒロが撮影「世界の街並みミニフォトブック」",
+            "ビジネスサロン「The Slow」1ヶ月無料招待",
+            "時間と場所にとらわれないビジネス構築レッスン（商品開発編＆プロモーション編）"
+          ]
+        }
+      ],
       "emails": [
         {
           "order": 1,
@@ -31,7 +41,12 @@
           "urls": [
             "https://hs.shitsumon.jp/locationfreeonlinesc"
           ],
-          "benefits": []
+          "benefits": [
+            "【先着100名】『もう1つの居場所をつくる』書籍 2冊プレゼント",
+            "【先着100名】マツダミヒロが撮影「世界の街並みミニフォトブック」",
+            "ビジネスサロン「The Slow」1ヶ月無料招待",
+            "時間と場所にとらわれないビジネス構築レッスン（商品開発編＆プロモーション編）"
+          ]
         },
         {
           "order": 3,
@@ -51,7 +66,12 @@
           "urls": [
             "https://hs.shitsumon.jp/locationfreeonlinesc"
           ],
-          "benefits": []
+          "benefits": [
+            "【先着100名】『もう1つの居場所をつくる』書籍 2冊プレゼント",
+            "【先着100名】マツダミヒロが撮影「世界の街並みミニフォトブック」",
+            "ビジネスサロン「The Slow」1ヶ月無料招待",
+            "時間と場所にとらわれないビジネス構築レッスン（商品開発編＆プロモーション編）"
+          ]
         },
         {
           "order": 5,
