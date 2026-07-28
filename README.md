@@ -10,12 +10,26 @@ on-line-school.jp のウェビナー「開催日時後」フォローアップ�
 - `data/webinars.json` - メールデータ（自動更新スクリプトが書き換える）
 
 ## 更新方法
-ゆみのMacで週次自動実行（launchd）。緊急時は手動でスクリプト実行も可能。
+ゆみのMacで**毎日9:00に自動実行**（launchd: `com.yumi.webinar-emails-update`）。
+WordPress側に変更があった日だけ commit & push されるので、変更がなければ何も起きません。
 
-データソースは `~/Desktop/green_of_life/yumi-ccws/02_scripts/` の以下スクリプト群:
-- `online-school-list-target-scenarios.mjs` - 対象作者の最新シナリオ抽出
-- `online-school-fetch-after-batch.mjs` - 各シナリオの「開催日時後」メール取得
-- `online-school-build-json.py` - JSONを整形してこのリポへ配置
+手動で走らせたいときは:
+```
+bash ~/Desktop/green_of_life/yumi-ccws/02_scripts/online-school-daily-update.sh
+```
+
+処理の中身（`~/Desktop/green_of_life/yumi-ccws/02_scripts/`）:
+- `online-school-daily-update.sh` - 取得→生成→commit&push の一連（launchdから呼ばれる）
+- `online-school-fetch-targets.mjs` - 対象シナリオの「開催日時後」メールをWPから取得
+- `online-school-build-from-full.py` - JSONを整形してこのリポへ配置（商品名・特典LPのoverrideもここ）
+
+**シナリオを増やす/減らすとき:**
+- 追加 → `node 02_scripts/online-school-fetch-targets.mjs <シナリオID>` を1回実行（以降は自動更新の対象に入る）
+- 除外 → `online-school-build-from-full.py` の `EXCLUDE_SCENARIO_IDS` に追記
+
+**WPのログインが切れたら:** 自動更新は空データを書かずに中止し、ログに警告が出ます。
+`node 02_scripts/online-school-save-session.mjs` でログインし直してください。
+ログ: `02_scripts/.cache/online-school/update.log`
 
 ## デプロイ
 Vercel自動連携。`main`ブランチへのpushで自動再ビルド。
